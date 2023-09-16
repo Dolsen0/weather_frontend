@@ -1,5 +1,6 @@
 "use client";
 
+import GetAstronomy from "./components/GetAstronomy.jsx";
 import GetWeather from "./components/GetWeather.jsx";
 
 export default function Home() {
@@ -10,6 +11,9 @@ export default function Home() {
 
         <section className="weather-info">
           <GetWeather />
+        </section>
+        <section>
+          <GetAstronomy />
         </section>
       </section>
 

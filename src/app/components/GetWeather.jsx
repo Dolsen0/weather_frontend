@@ -34,8 +34,8 @@ export default function GetWeather() {
 
     return (
         <>
-            <p>{current.temp_f}&deg;F</p>
             <p>{condition.text}</p>
+            <p>{current.temp_f}&deg;F</p>
             <img src={`https:${condition.icon}`} alt="Weather Icon" />
             <p>{location.name}</p>
             <p>{current.feelslike_f}&deg;F</p>
