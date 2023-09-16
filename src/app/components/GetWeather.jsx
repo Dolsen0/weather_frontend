@@ -34,11 +34,11 @@ export default function GetWeather() {
 
     return (
         <>
-            <p>{condition.text}</p>
-            <p>{location.name}</p>
             <p>{current.temp_f}&deg;F</p>
-            <p>{current.feelslike_f}&deg;F</p>
+            <p>{condition.text}</p>
             <img src={`https:${condition.icon}`} alt="Weather Icon" />
+            <p>{location.name}</p>
+            <p>{current.feelslike_f}&deg;F</p>
         </>
     );
 }
