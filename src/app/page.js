@@ -1,6 +1,6 @@
 "use client"
 
-import GetLocation from './components/GetLocation.jsx'
+import GetWeather from './components/GetWeather.jsx'
 
 export default function Home() {
   return (
@@ -8,8 +8,11 @@ export default function Home() {
     <section className='app__background'>
 
       <h1>Weather</h1>
-      
-      <GetLocation />  
+
+      <section className='weather-info'>
+      <GetWeather />  
+      </section>
+
     </section>
     </>
   )

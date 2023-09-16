@@ -87,13 +87,11 @@ html, body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background-image: url('../../public/vector-beautiful-nature-illustration.jpg');
+  background-image: url('../../public/e8bf5f2b932778774b3643c0453a144f.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-
 
 
 a {
