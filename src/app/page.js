@@ -2,6 +2,7 @@
 
 import GetAstronomy from "./components/GetAstronomy.jsx";
 import GetWeather from "./components/GetWeather.jsx";
+import GetForecast from "./components/GetForecast.jsx";
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
         </section>
         <section>
           <GetAstronomy />
+        </section>
+        <section>
+          <GetForecast />
         </section>
       </section>
 
