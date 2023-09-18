@@ -19,13 +19,13 @@ export default function Home() {
       </section>
 
       <footer>
-        <p>&copy;2023 Derek Olsen </p>
         <p>
           Powered by{" "}
           <a href="https://www.weatherapi.com/" title="Free Weather API">
             WeatherAPI.com
           </a>
         </p>
+        <p>&copy;2023 Derek Olsen </p>
       </footer>
     </>
   );

@@ -35,26 +35,42 @@ export default function GetAstronomy() {
 
   return (
     <>
-      <h3>forecast</h3>
-    <section className="forecast">
-      <div className="forecast__container">
+      <section className="forecast">
+        <div className="forecast__container">
+          <div>
+            <p>{forecastOne.date}:</p>
+            <p>{forecastOne.day.avgtemp_f}&deg;F</p>
+            <p>{forecastOne.day.condition.text}</p>
+            <img
+              src={`https:${forecastOne.day.condition.icon}`}
+              alt="Weather Icon"
+            />
+            <p>Rain chance: {forecastOne.day.daily_chance_of_rain}%</p>
+          </div>
 
-        <div>
-        <p>{forecastOne.date}:</p>
-        <p>{forecastOne.day.condition.text}</p>
-      </div>
-      
-      <div>
-        <p>{forecastTwo.date}:</p>
-        <p>{forecastTwo.day.condition.text}</p>
-      </div>
+          <div>
+            <p>{forecastTwo.date}:</p>
+            <p>{forecastTwo.day.avgtemp_f}&deg;F</p>
+            <p>{forecastTwo.day.condition.text}</p>
+            <img
+              src={`https:${forecastTwo.day.condition.icon}`}
+              alt="Weather Icon"
+            />
+            <p>Rain chance: {forecastTwo.day.daily_chance_of_rain}%</p>
+          </div>
 
-      <div>
-        <p>{forecastThree.date}:</p>
-        <p>{forecastThree.day.condition.text}</p>
-      </div>
+          <div>
+            <p>{forecastThree.date}:</p>
+            <p>{forecastThree.day.avgtemp_f}&deg;F</p>
+            <p>{forecastThree.day.condition.text}</p>
+            <img
+              src={`https:${forecastThree.day.condition.icon}`}
+              alt="Weather Icon"
+            />
+            <p>Rain chance: {forecastThree.day.daily_chance_of_rain}%</p>
+          </div>
         </div>
-    </section>
+      </section>
     </>
   );
 }
