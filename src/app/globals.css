@@ -99,11 +99,37 @@ a {
   text-decoration: none;
 }
 
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40vh;
+  margin: 2rem;
+}
+
+.container > section{
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  max-height: 500px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
 .weather{
-  border: 2px solid red
+  border: 2px solid rgb(33, 33, 34);
 }
 .astronomy{
-  border: 2px solid white;
+  border: 2px solid rgb(33, 33, 34);
 }
 .forecast{
   border: 2px solid yellow;

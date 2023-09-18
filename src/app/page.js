@@ -9,16 +9,13 @@ export default function Home() {
     <>
       <section className="app__background">
         <h1>Weather</h1>
-
-        <section className="weather-info">
+          <section className="today">
+            <div className="container">
           <GetWeather />
-        </section>
-        <section>
           <GetAstronomy />
-        </section>
-        <section>
+            </div>
+          </section>
           <GetForecast />
-        </section>
       </section>
 
       <footer>
