@@ -99,6 +99,20 @@ a {
   text-decoration: none;
 }
 
+.weather{
+  border: 2px solid red
+}
+.astronomy{
+  border: 2px solid white;
+}
+.forecast{
+  border: 2px solid yellow;
+}
+
+footer{
+  border: 2px solid green;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

@@ -20,7 +20,7 @@ export default function GetAstronomy() {
     }, []);
 
     if (loading) {
-        return <p>Loading...</p>;
+        return <p></p>;
     }
 
     if (error) {
@@ -28,12 +28,12 @@ export default function GetAstronomy() {
     }
 
     return (
-        <>
+        <section className="astronomy">
             <p>Sunrise: {astronomy.sunrise}</p>
             <p>Sunset: {astronomy.sunset}</p>
             <p>Moonrise: {astronomy.moonrise}</p>
             <p>Moonset: {astronomy.sunset}</p>
             <p>Moon: {astronomy.moon_phase}</p>
-        </>
+        </section>
     );
 }

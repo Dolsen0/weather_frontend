@@ -26,7 +26,7 @@ export default function GetAstronomy() {
   }, []);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <p></p>;
   }
 
   if (error) {
@@ -35,6 +35,7 @@ export default function GetAstronomy() {
 
   return (
     <>
+    <section className="forecast">
       <h3>forecast</h3>
       <div>
         <p>{forecastOne.date}:</p>
@@ -50,6 +51,7 @@ export default function GetAstronomy() {
         <p>{forecastThree.date}:</p>
         <p>{forecastThree.day.condition.text}</p>
       </div>
+    </section>
     </>
   );
 }
