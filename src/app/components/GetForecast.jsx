@@ -35,9 +35,11 @@ export default function GetAstronomy() {
 
   return (
     <>
-    <section className="forecast">
       <h3>forecast</h3>
-      <div>
+    <section className="forecast">
+      <div className="forecast__container">
+
+        <div>
         <p>{forecastOne.date}:</p>
         <p>{forecastOne.day.condition.text}</p>
       </div>
@@ -51,6 +53,7 @@ export default function GetAstronomy() {
         <p>{forecastThree.date}:</p>
         <p>{forecastThree.day.condition.text}</p>
       </div>
+        </div>
     </section>
     </>
   );

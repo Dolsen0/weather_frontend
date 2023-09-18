@@ -136,6 +136,14 @@ a {
   border: 2px solid yellow;
 }
 
+.forecast__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
 footer{
   border: 2px solid green;
 }
